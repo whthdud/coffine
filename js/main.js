@@ -25,4 +25,29 @@ $(function(){
         arrows:true
     })
 
+
+    //section4 이미지 슬라이드
+
+    $(".left_move").slick({
+        autoplay:true,
+        autoplaySpeed:1000,
+        arrows:false,
+        dots:true
+    })
+
+    //section5 탭메뉴
+
+    $(".section5_inner li").click(function(e){
+        e.preventDefault()
+        $(".section5_inner li").toggleClass("on");
+    })
+
+    //팝업
+
+    $(".pop").slideDown()
+
+    $(".pop_inner button").click(function(){
+        $(".pop").slideUp()
+    })
+
 })//close
